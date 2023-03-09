@@ -23,3 +23,11 @@ pianoClosed.addEventListener('click', () => {
     pianoOpen.style.opacity = '1';
     pianoClosed.style.opacity = '0';
 })
+
+function goPlay() {
+    setTimeout (function(){
+        location.href = '/PianoOnline/playPiano/play.html';
+    }, 200) 
+}
+
+    

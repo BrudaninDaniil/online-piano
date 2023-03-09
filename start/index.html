@@ -9,10 +9,15 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="arrowWithText">
+        <h3 class="startPlay">click</h3>
+        <img class="arrow" src="/PianoOnline/arrow.png" alt="">
+
+    </div>
     <div class="grid-for-all">
         <h1 class="logo">MAGIC PIANO</h1>
         <div class="start">
-            <button id="openClosed" class="btn-start"><img id="pianoClosed" class="piano1" src="/PianoOnline/piano1-open.png" alt=""></button>
+            <img id="pianoClosed" class="piano1" src="/PianoOnline/piano1-open.png" alt="" onclick="goPlay()">
         </div>
         <img id="pianoOpen" class = 'piano1-open' src="/PianoOnline/piano1.png" alt="">
     </div>
