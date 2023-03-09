@@ -1,20 +1,25 @@
 const btnStart = document.getElementById('openClosed');
 const pianoClosed = document.getElementById('pianoClosed');
 const pianoOpen = document.getElementById('pianoOpen');
+pianoClosed.style.opacity = 100 + '%'
+pianoOpen.style.opacity = 0 + '%'
 
-console.log(pianoClosed);
+console.log(pianoClosed.style);
 
 function checkPiano (piano) {
-    piano.style.opacity = 100 + '%' ? true : false ;
+    return piano.style.opacity == '1' ? true : false ;
 }
 
 pianoOpen.addEventListener('click', () => {
-    if (checkPiano(pianoClosed)) {
-        pianoClosed.style.opacity = 0 + '%'
-        pianoOpen.style.opacity = 100 + '%'
-    }
-    if (checkPiano(pianoOpen)) {
-        pianoOpen.style.opacity = 0 + '%'
-        pianoClosed.style.opacity = 100 + '%'
-    }
+    pianoClosed.style.zIndex = '1';
+    pianoOpen.style.zIndex = '0';
+    pianoOpen.style.opacity = '0';
+    pianoClosed.style.opacity = '1';
+    
+})
+pianoClosed.addEventListener('click', () => {
+    pianoClosed.style.zIndex = '0';
+    pianoOpen.style.zIndex = '1';
+    pianoOpen.style.opacity = '1';
+    pianoClosed.style.opacity = '0';
 })
