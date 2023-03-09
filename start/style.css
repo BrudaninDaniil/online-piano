@@ -57,28 +57,29 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 350px;
+    top: 390px;
     left: 220px ;
     transform: translate( 0 0 );
     transform: rotate(0);
-    /* transition: ease 2s all; */
-    animation-name: goArrowText;
+    transition: ease 2s all;
+    /* animation-name: goArrowText;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
     z-index: 4;
 }
 
 .arrow {
     width: 150px;
     height: 100px;
-    transform: rotate(110deg);
+    transform: rotate(125deg);
     position: relative;
-    right: 45px;
-    animation-name: degArrow;
+    right: 56px;
+    /* animation-name: degArrow;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
+    
     
 }
 
@@ -117,7 +118,7 @@ h3 {
         transform: rotate(120deg);
     }
     66% {
-        transform: rotate(125deg);
+        transform: rotate(135deg);
     }
     99% {
         transform: rotate(110deg);
