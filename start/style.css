@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+.grid-for-all {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.logo {
+    margin: 30px auto;
+
+}
+
+.start {
+    margin: 30px auto;
+
+}
+
+.btn-start {
+    border: none;
+}
+
+.piano1 {
+    width: 320px;
+    opacity: 100%;
+
+}
+
+.piano1-open {
+    width: 320px;
+    margin: 30px auto;
+    position: relative;
+    top: -380px;
+    opacity: 0%;
+}
